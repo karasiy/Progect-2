@@ -5,12 +5,12 @@
 */
 
 .page.theme_light {
-  --site-background: #fff1f7;
-  --title-color: #ffc2e6;
-  --section-title: #353430;
-  --text-background: #ff8dcb;
-  --article-text: #353430;
-  --article-title: #353430;
+  --site-background: #8338ec;
+  --title-color: #00f5d4;
+  --section-title: #f15bb5;
+  --text-background: #00bbf9;
+  --article-text: #fee440;
+  --article-title: #fee440;
   --background-url: url(../images/cover-image-light.png);
   --display: none;
 }
