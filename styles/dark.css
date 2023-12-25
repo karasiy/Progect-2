@@ -1,0 +1,16 @@
+/*
+  Специально для тёмной темы при наличии класса,
+  здесь окажутся стили, которые нужно переопределить принудительно,
+  переключая тему
+*/
+
+.page.theme_dark {
+  --site-background: #000028;
+  --title-color: #db00ff;
+  --section-title: #ff0070;
+  --text-background: #ff0070;
+  --article-text: #f1b2ce;
+  --article-title: #000028;
+  --background-url: url(../images/cover-image-dark.png);
+  --display: block;
+}

@@ -1,0 +1,390 @@
+/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+
+.page {
+  background: var(--site-background);
+  width: 1024px;
+  margin: auto;
+  font-family: "IBM Plex Mono", "Arial", sans-serif;
+}
+
+.header {
+  width: 1024px;
+  height: 768px;
+  border: 1px solid red;
+  background: var(--background-url);
+  background-size: cover;
+}
+
+.header__theme-menu {
+  border: 1px solid red;
+  width: 230px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__theme-menu-button {
+  color: var(--section-title);
+  background: none;
+  border: none;
+  text-transform: lowercase;
+  padding-left: 13px;
+  padding-right: 13px;
+  cursor: pointer;
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid rgba(255, 0, 112, 0.4);
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--section-title);
+}
+
+.header__title {
+  color: var(--title-color);
+  text-shadow: 4px 4px 0px #ff0070;
+  font-size: 157px;
+  font-weight: 700;
+  line-height: 82.5%; /* 129.525px */
+  margin-top: 273px;
+  margin-bottom: 114px;
+}
+.header__text {
+  color: var(--article-title);
+  background: #ff0070;
+  font-size: 18px;
+  background: var(--text-background);
+  font-weight: 700;
+  line-height: 23.4px; /* 130% */
+  width: 491px;
+  margin-left: 513px;
+}
+.header__angle {
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-left: 1px solid var(--section-title);
+  border-bottom: 1px solid var(--section-title);
+  margin-left: 20px;
+  margin-top: 89px;
+}
+.article {
+  margin-bottom: 20px;
+}
+
+.focus {
+  width: 100%;
+  height: 508px;
+  border: 1px solid green;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+
+.focus .article {
+  width: 649px;
+  border: 1px solid white;
+}
+
+.focus .article:last-child {
+  margin-bottom: 0;
+}
+
+.articles {
+}
+
+.article__title {
+  background: var(--text-background);
+  color: var(--article-title);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23px;
+  margin-bottom: 10px;
+}
+.article__text {
+  color: var(--article-text);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px; /* 130% */
+}
+
+.advice .article__title {
+  width: 649px;
+  height: 23px;
+}
+
+.advice .article__text {
+  width: 649px;
+  margin-bottom: 20px;
+  color: #f1b2ce;
+  padding: 0px 20px;
+}
+
+.section-title {
+  background: none;
+  width: 315px;
+  color: var(--text-background);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px; /* 130% */
+  border: 1px solid yellow;
+}
+
+.concentration {
+  width: 1024px;
+  height: 498px;
+  border: 1px solid red;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.concentration .articles {
+  display: flex;
+}
+
+.concentration .article {
+  margin-right: 20px;
+  width: 315px;
+}
+
+.concentration .article:last-child {
+  margin-right: 0;
+}
+
+.concentration .section-title {
+  margin-bottom: 20px;
+}
+
+.advice {
+  display: flex;
+  width: 1024px;
+  border: 1px solid red;
+}
+
+.gallery {
+  width: 1024px;
+  height: 1091px;
+  border: 1px solid red;
+}
+
+.images {
+  width: 984px;
+  height: 1048px;
+  border: 1px solid red;
+  margin: auto;
+  display: grid;
+  grid-template-areas:
+    "img1 img1 img2"
+    "img3 img4 img2"
+    "img3 img5 img5";
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.img1 {
+  width: 649px;
+  height: 260px;
+  margin-top: 20px;
+  margin-left: 1px;
+  grid-area: img1;
+  object-fit: cover;
+  object-position: center;
+}
+
+.img2 {
+  width: 315px;
+  height: 595px;
+  flex-shrink: 0;
+  margin-top: 20px;
+  grid-area: img2;
+  object-fit: cover;
+  object-position: center;
+}
+
+.img3 {
+  width: 315px;
+  height: 768px;
+  flex-shrink: 0;
+  grid-area: img3;
+  object-fit: cover;
+  object-position: center;
+}
+
+.img4 {
+  width: 315px;
+  height: 315px;
+  grid-area: img4;
+  object-fit: cover;
+  object-position: center;
+}
+
+.img5 {
+  width: 649px;
+  height: 428px;
+  flex-shrink: 0;
+  grid-area: img5;
+  object-fit: cover;
+  object-position: center;
+}
+
+.footer {
+  width: 1024px;
+  height: 768px;
+  border: 1px solid red;
+}
+
+.footer__top-angle {
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-right: 1px solid var(--selection-title);
+  border-top: 1px solid var(--selection-title);
+  margin-left: 979px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.footer__title {
+  color: #db00ff;
+  text-shadow: 2px 2px 0px #ff0070;
+  font-family: IBM Plex Mono;
+  font-size: 157px;
+  font-weight: 700;
+  line-height: 82.5%; /* 129.525px */
+  margin-top: 274px;
+  margin-bottom: 274px;
+  margin-left: 277px;
+}
+.footer__bottom-angle {
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid var(--selection-title);
+  border-left: 1px solid var(--selection-title);
+  margin-left: 20px;
+}
+/*------------*/
+@media (width <= 768px) {
+  .page {
+    width: 768px;
+  }
+
+  .header {
+    width: 768px;
+    height: 1024px;
+  }
+
+  .advice {
+    width: 768px;
+  }
+
+  .gallery {
+    width: 768px;
+    height: 823px;
+  }
+
+  .footer {
+    width: 768px;
+    height: 1024px;
+  }
+}
+/*------------*/
+@media (width <= 375px) {
+  .page {
+    width: 375px;
+  }
+
+  .header {
+    width: 375px;
+    height: 668px;
+  }
+
+  .advice {
+    flex-direction: column;
+    width: 375px;
+  }
+
+  .advice .section-title {
+    margin-right: 20px;
+  }
+
+  .concentration {
+    width: 375px;
+  }
+
+  .focus {
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .focus .article {
+    width: 355px;
+  }
+
+  .advice .article {
+    width: 355px;
+  }
+
+  .gallery {
+    width: 375px;
+    height: 1400px;
+  }
+
+  .images {
+    width: 375px;
+    height: 1366px;
+
+    grid-template-areas:
+      "img1"
+      "img2"
+      "img3"
+      "img4"
+      "img5"
+      "img6";
+    row-gap: 10px;
+  }
+
+  .img1 {
+    width: 375px;
+    height: 142px;
+  }
+
+  .img2 {
+    width: 375px;
+    height: 355px;
+  }
+
+  .img3 {
+    width: 375px;
+    height: 247px;
+  }
+  .img4 {
+    width: 375px;
+    height: 355px;
+  }
+
+  .img5 {
+    width: 375px;
+    height: 237px;
+  }
+
+  .footer {
+    width: 375px;
+    height: 667px;
+  }
+
+  .footer__title {
+    margin-top: 250px;
+    margin-bottom: 251px;
+    margin-left: 14px;
+    font-size: 16px;
+  }
+}
